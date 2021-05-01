@@ -1,0 +1,112 @@
+/* Configurações gerais da pagina */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+body {
+    background-image: url("../images/bg_money.jfif");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Css para o box onde fica as informações */
+
+div.box {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 100px;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px;
+}
+
+/* Css para componentes variados*/
+
+img {
+    width: 25em;
+    margin-bottom: -20px;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-weight: 500;
+}
+
+input {
+    width: 15em;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+/* Botão colorido de submit */
+
+.btn-grad {
+    background-image: linear-gradient(to right, #56ab2f 0%, #a8e063 51%, #56ab2f 100%)
+}
+
+.btn-grad {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    border: none;
+}
+
+.btn-grad:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Css botão para navegar entre as paginas de login e css */
+
+div.span a {
+    margin-left: 5px;
+    text-decoration: none;
+    color: green;
+}
+
+div.span {
+    display: flex;
+}
+
+/* Configuração para telas de celular */
+
+@media (max-width: 900px) {
+    div.box {
+        padding: 10px;
+    }
+}
+
+/* Divs de error */
+
+div.messageError {
+    background-color: #ff9999;
+    border-radius: 10px;
+    padding: 10px 20px;
+}

@@ -1,0 +1,185 @@
+/* Configurações Gerais */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+body {
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Css para o cabeçalho */
+
+div.navBar div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+}
+
+div.navBar div h1 {
+    font-weight: 300;
+    font-size: 1.8em;
+}
+
+div.navBar div img {
+    width: 100px;
+}
+
+div.navBar {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    background-color: white;
+    align-items: center;
+}
+
+.btn-grad {
+    background-image: linear-gradient(to right, #232526 0%, #414345 51%, #232526 100%)
+}
+
+.btn-grad {
+    text-decoration: none;
+    font-size: 1em;
+    padding: 15px 55px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 100% auto;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    display: block;
+}
+
+.btn-grad:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Css para o conteúdo abaixo do cabeçalho */
+
+div.content {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Css para o titulo */
+
+div.title {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+div.title h1 {
+    font-weight: 500;
+    font-size: 2.5em;
+    padding: 5px;
+}
+
+div.title h2 {
+    font-weight: 400;
+    font-size: 1.5em;
+    margin-top: 8px;
+}
+
+/* Css para a parte de adição de anotações */
+
+div.add {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+div.add input {
+    height: 20px;
+    border-radius: 10px;
+    border: none;
+    width: 800px;
+    padding: 10px;
+    margin-right: 5px;
+}
+
+div.add button {
+    height: 40px;
+    width: 200px;
+    border-radius: 10px;
+    border: none;
+}
+
+div.add button:hover {
+    background-color: gray;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    div.add input {
+        margin-left: 10px;
+        width: 270px;
+    }
+
+    div.add button {
+        margin-right: 10px;
+        width: 70px;
+    }
+}
+
+@media (min-width: 768px) {
+    @media (max-width: 1200px) {
+        div.add input {
+            margin-left: 10px;
+            width: 600px;
+        }
+
+        div.add button {
+            margin-right: 10px;
+            width: 100px;
+        }
+    }
+}
+
+/* Css para parte de mostrar anotações */
+
+table {
+    margin: 20px;
+}
+
+table th {
+    font-size: 1.5em;
+    font-weight: 300;
+    text-align: left;
+}
+
+table th.anotacoes {
+    width: 80vh;
+}
+
+td.note {
+    font-weight: 700;
+}
+
+button.actions {
+    padding: 5px 30px;
+    border-radius: 10px; 
+    border: none;
+    margin: 5px 1px;
+}
+
+button.actions:hover {
+    background-color: gray;
+    color: white;
+}
